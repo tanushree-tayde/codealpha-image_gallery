@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Image Gallery</h1>
+    <nav class="filter-bar">
+      <button class="filter-btn active" data-target="all">Show All</button>
+      <button class="filter-btn" data-target="hillstation">Hillstation</button>
+      <button class="filter-btn" data-target="nature">Nature</button>
+      <button class="filter-btn" data-target="animal">Animal</button>
+      <button class="filter-btn" data-target="bird">Bird</button>
+    </nav>
+  </header>
+
+  <main class="gallery" id="gallery">
+    <!-- Animal Section -->
+    <div class="card" data-category="animal">
+      <img src="images/animal1.jpg" alt="Animal Scene 1">
+      <div class="overlay"><h3>Animal Scene 1</h3></div>
+    </div>
+    <div class="card" data-category="animal">
+      <img src="images/animal2.jpg" alt="Animal Scene 2">
+      <div class="overlay"><h3>Animal Scene 2</h3></div>
+    </div>
+    <div class="card" data-category="animal">
+      <img src="images/animal3.jpg" alt="Animal Scene 3">
+      <div class="overlay"><h3>Animal Scene 3</h3></div>
+    </div>
+    <div class="card" data-category="animal">
+      <img src="images/animal4.jpg" alt="Animal Scene 4">
+      <div class="overlay"><h3>Animal Scene 4</h3></div>
+    </div>
+
+    <!-- Bird Section -->
+    <div class="card" data-category="bird">
+      <img src="images/bird1.jpg" alt="Bird Scene 1">
+      <div class="overlay"><h3>Bird Scene 1</h3></div>
+    </div>
+    <div class="card" data-category="bird">
+      <img src="images/bird2.jpg" alt="Bird Scene 2">
+      <div class="overlay"><h3>Bird Scene 2</h3></div>
+    </div>
+    <div class="card" data-category="bird">
+      <img src="images/bird3.jpg" alt="Bird Scene 3">
+      <div class="overlay"><h3>Bird Scene 3</h3></div>
+    </div>
+    <div class="card" data-category="bird">
+      <img src="images/bird4.jpg" alt="Bird Scene 4">
+      <div class="overlay"><h3>Bird Scene 4</h3></div>
+    </div>
+
+    <!-- Hillstation Section -->
+    <div class="card" data-category="hillstation">
+      <img src="images/hillstation1.jpg" alt="Hillstation Scene 1">
+      <div class="overlay"><h3>Hillstation Scene 1</h3></div>
+    </div>
+    <div class="card" data-category="hillstation">
+      <img src="images/hillstation2.jpg" alt="Hillstation Scene 2">
+      <div class="overlay"><h3>Hillstation Scene 2</h3></div>
+    </div>
+    <div class="card" data-category="hillstation">
+      <img src="images/hillstation3.jpg" alt="Hillstation Scene 3">
+      <div class="overlay"><h3>Hillstation Scene 3</h3></div>
+    </div>
+    <div class="card" data-category="hillstation">
+      <img src="images/hillstation4.jpg" alt="Hillstation Scene 4">
+      <div class="overlay"><h3>Hillstation Scene 4</h3></div>
+    </div>
+
+    <!-- Nature Section -->
+    <div class="card" data-category="nature">
+      <img src="images/nature1.jpg" alt="Nature Scene 1">
+      <div class="overlay"><h3>Nature Scene 1</h3></div>
+    </div>
+    <div class="card" data-category="nature">
+      <img src="images/nature2.jpg" alt="Nature Scene 2">
+      <div class="overlay"><h3>Nature Scene 2</h3></div>
+    </div>
+    <div class="card" data-category="nature">
+      <img src="images/nature3.jpg" alt="Nature Scene 3">
+      <div class="overlay"><h3>Nature Scene 3</h3></div>
+    </div>
+    <div class="card" data-category="nature">
+      <img src="images/nature4.jpg" alt="Nature Scene 4">
+      <div class="overlay"><h3>Nature Scene 4</h3></div>
+    </div>
+  </main>
+
+  <!-- Lightbox Viewport View -->
+  <dialog class="lightbox" id="viewer">
+    <div class="lightbox-ui">
+      <button class="close-btn" aria-label="Close viewer">&times;</button>
+      <button class="nav-btn prev" aria-label="Previous photo">❮</button>
+      <div class="display-box">
+        <img id="viewerImg" src="" alt="">
+        <p id="viewerCap"></p>
+      </div>
+      <button class="nav-btn next" aria-label="Next photo">❯</button>
+    </div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
